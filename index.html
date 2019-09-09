@@ -2,28 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>My webpage</title>
+        <title>Megumegu</title>
     </head>
     <body>
         <style type="text/css">
             body{
                background-image:url('1.jpg');
-            background-attachment: fixed
-            
-            }
-    
-            h1{
-                color: orange;
-                font-size: 50px
-        
+            background-attachment: fixed 
             }
            h2,p,p1{
                 color: aqua;
-        
                 font-size: 45px
             }
             h3{
-                position: relative;
+                position:absolute;
                 left: 100px;
             
                 color: red;
@@ -52,35 +44,55 @@
                 left: 25px;
                 
             }
-            
-            h1{
-                text-align: center;
-            }  
-            img {
-    display: block;
-    margin: 0 auto;
-}
             p1 {
                position: relative;
                 left: 500px
-            }
+            }          
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				border: 1px grey;
+				background-color: azure;
+			,
+			}	
+			li {
+				float: left;
+			}
+			li a {
+				display: block;
+				color: black;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			li a:hover:not(.active){
+				background-color: gainsboro;
+			}
+			li a.active{
+				color: white;
+				background-color: antiquewhite;
+			}
         </style>
-    <h1>My test webpage</h1>
-    <h2>I'm glad to see you!</h2>
-    <h3>富强 民主 文明 和谐<br>自由 平等 公正 法制<br>爱国 敬业 诚信 友善</h3>
-        <div>
-            <p>Hey what's up! Welcom to RiderDCD's first webpage.</p>
-        </div>
-    
-        <hr>
-        <p1>点击图片<br/>⬇️ ⬇️ ⬇️</p1>
+		<ul>
+			<li><a class="active" href="index.html" target="_self"><img src="3.jpg" width=60px>
+				</a>
+			</li>
+			<li><a href="test.html">篮球视频</a></li>
+			<li><a>图包</a></li>
+			<li><a>番剧</a></li>
+		</ul>
+   <div> <h2>I'm glad to see you!</h2>
+            <p>Hey what's up! Welcom to RiderDCD's first webpage.</p><p1>点击图片<br/>⬇️ ⬇️ ⬇️</p1>
     <br/><hr>
-        <a href = "https://nick.myinfo.ink/test.html" target = "_blank"><img src="2.jpg" height="850px" width="600px" alt="图片找不到了">
+        </div>   
+        <a href = "test.html" target = "_self"><img src="2.jpg" height="850px" width="600px" alt="图片找不到了">
         </a>
         <div id="div1">
             <h3>是否接受加藤惠的邀请</h3>
             <button id="btn1" onclick="">接受</button>
-            <button id="btn2">不接受</button>
+            <button id="btn2">拒绝</button>
         </div>
     </body>
 </html>
